@@ -1,0 +1,36 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Waves.Horus.Screens"
+        xmlns:Controls="clr-namespace:Waves.Horus.Controls" x:Name="Win_newProject" x:Class="Waves.Horus.Screens.NewProject"
+        mc:Ignorable="d"
+        Title="Novo projeto" Width="500" ContentRendered="Window_ContentRendered" Closed="Win_newProject_Closed" Background="#FF313131" WindowStyle="ToolWindow" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" MinWidth="500" Closing="Win_newProject_Closing" SizeToContent="Height" Loaded="Win_newProject_Loaded">
+    <Grid>
+        <StackPanel Margin="20" Orientation="Vertical" VerticalAlignment="Top">
+            <Grid>
+
+                <TextBox x:Name="Txb_projectName" VerticalContentAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Background="#FF2A2A2A" Foreground="#FFCDCDCD" BorderBrush="#FF3E3E3E" Margin="0,21,0,0" SpellCheck.IsEnabled="True" TextChanged="Txb_projectName_TextChanged" Height="35" Padding="8,0,0,0" FontSize="14"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Nome:" VerticalAlignment="Top" Foreground="#FF999999" Width="78" Margin="1,0,0,0"/>
+            </Grid>
+            <Grid Margin="0,15,0,0">
+
+                <TextBox x:Name="Txb_projectDescription" VerticalContentAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Background="#FF2A2A2A" Foreground="#FFCDCDCD" BorderBrush="#FF3E3E3E" Margin="0,21,0,0" SpellCheck.IsEnabled="True" Height="35" Padding="8,0,0,0" FontSize="14"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Descrição:" VerticalAlignment="Top" Foreground="#FF999999" Width="78" Margin="1,0,0,0"/>
+            </Grid>
+            <Grid Margin="0,15,0,0">
+
+                <TextBox x:Name="Txb_projectId" VerticalContentAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Background="#FF2A2A2A" Foreground="#FFCDCDCD" BorderBrush="#FF3E3E3E" Margin="0,21,0,0" Height="35" Padding="8,0,0,0" FontSize="14"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="ID:" VerticalAlignment="Top" Foreground="#FF999999" Width="78" Margin="1,0,0,0"/>
+            </Grid>
+            <StackPanel Margin="0,20,0,0" HorizontalAlignment="Center" Orientation="Horizontal">
+                <Controls:RoundButton x:Name="Cmd_Criar" Height="35" Width="110" MouseLeftButtonDown="Cmd_Criar_MouseLeftButtonDown"/>
+                <Controls:RoundButton x:Name="Cmd_Cancelar" Height="35" Width="110" Margin="20,0,0,0" MouseLeftButtonDown="Cmd_Cancelar_MouseLeftButtonDown"/>
+
+            </StackPanel>
+
+        </StackPanel>
+
+    </Grid>
+</Window>
