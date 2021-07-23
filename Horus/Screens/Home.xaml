@@ -30,10 +30,10 @@
                         <Label x:Name="Lbl_options" Content="Início" Foreground="White" FontSize="22" Margin="0,0,-153.6,0" HorizontalAlignment="Left"/>
 
                         <StackPanel x:Name="Stk_buttons" HorizontalAlignment="Left" Height="50" VerticalAlignment="Center" Orientation="Horizontal" Margin="5,10,0,8">
-                            <Controls:RoundButton x:Name="Cmd_new" Height="50" Margin="0" VerticalAlignment="Center" Width="154" IsTabStop="True" MouseLeftButtonDown="Cmd_new_MouseLeftButtonDown"/>
-                            <Controls:RoundButton x:Name="Cmd_open" Height="50" Margin="20,0,0,0" VerticalAlignment="Center" Width="154" IsTabStop="True" MouseLeftButtonDown="Cmd_open_MouseLeftButtonDown"/>
-                            <Controls:RoundButton x:Name="Cmd_tools" Height="50" Margin="20,0,0,0" VerticalAlignment="Center" Width="154" IsTabStop="True"/>
-                            <Controls:RoundButton x:Name="Cmd_about" Height="50" Margin="19,0,0,0" VerticalAlignment="Center" Width="154" IsTabStop="True"/>
+                            <Controls:RoundButton x:Name="Cmd_new" Height="50" Margin="0" VerticalAlignment="Center" Width="154" IsTabStop="True" MouseLeftButtonDown="Cmd_new_MouseLeftButtonDown" Caption="Novo..."/>
+                            <Controls:RoundButton x:Name="Cmd_open" Height="50" Margin="20,0,0,0" VerticalAlignment="Center" Width="154" IsTabStop="True" MouseLeftButtonDown="Cmd_open_MouseLeftButtonDown" Caption="Abrir"/>
+                            <Controls:RoundButton x:Name="Cmd_tools" Height="50" Margin="20,0,0,0" VerticalAlignment="Center" Width="154" IsTabStop="True" Caption="Ferramentas"/>
+                            <Controls:RoundButton x:Name="Cmd_about" Height="50" Margin="19,0,0,0" VerticalAlignment="Center" Width="154" IsTabStop="True" Caption="Sobre..."/>
                         </StackPanel>
                     </StackPanel>
                 </Border>
